@@ -241,3 +241,6 @@ section[id] { scroll-margin-top: 68px; }
   background: var(--surface); padding: 1px 6px; border-radius: 6px;
 }
 .doc hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 8px; }
+/* Play'in veri silme bağlantısı doğrudan bir başlığa açılıyor; başlık sabit
+   üst barın altında kalmasın. */
+.doc [id] { scroll-margin-top: 80px; }
