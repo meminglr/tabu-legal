@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabu — arkadaşlarınla kelime anlatma oyunu</title>
+  <meta name="description" content="Anlat, ama yasak kelimeleri söyleme. Tabu’yu tek telefonla masada elden ele oyna ya da çevrimiçi, sesli sohbetle bir masaya otur.">
+  <meta name="theme-color" content="#f5ead8">
+  <link rel="icon" type="image/png" href="img/favicon-64.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <!-- Paylaşılan bağlantının önizlemesi. og:image tam adres olmalı: çoğu
+       platform göreli adresi okumuyor. -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tabu.emniva.com/">
+  <meta property="og:title" content="Tabu — arkadaşlarınla kelime anlatma oyunu">
+  <meta property="og:description" content="Anlat, ama yasak kelimeleri söyleme.">
+  <meta property="og:image" content="https://tabu.emniva.com/img/icon-512.png">
+  <link rel="canonical" href="https://tabu.emniva.com/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><img src="img/icon-512.png" alt="" width="36" height="36">Tabu</a>
+    <nav aria-label="Sayfa içi">
+      <a href="#nasil">Nasıl oynanır</a>
+      <a href="#ozellikler">Özellikler</a>
+      <a class="nav-cta" href="#indir">İndir</a>
+    </nav>
+  </div>
+</header>
+
+<main id="icerik">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Anlat, ama yasak kelimeleri söyleme.</h1>
+        <p class="lead">Tabu, arkadaşlarınla oynayacağın hızlı bir kelime anlatma oyunu. Telefonu masada elden ele dolaştır ya da internetten, sesli sohbetle bir masaya otur.</p>
+
+        <!-- MAĞAZA BAĞLANTILARI
+             Uygulama yayına girince: href'e mağaza adresini yaz, class'tan
+             "is-soon"u ve aria-disabled'ı kaldır, "Yakında" satırını
+             "Hemen indir" gibi bir şeyle değiştir. Resmî rozet görselleri
+             kullanılacaksa (Google ve Apple'ın kendi "Get it on / Download
+             on" rozetleri) <a>'nın içeriğini o <img> ile değiştirmek yeterli;
+             ölçüleri .store sınıfı veriyor. Aynı iki düğme sayfanın altında
+             (#indir) bir kez daha var. -->
+        <div class="stores">
+          <a class="store is-soon" href="#indir" aria-disabled="true">
+            <span class="store-label">Google Play</span>
+            <span class="store-note">Yakında</span>
+          </a>
+          <a class="store is-soon" href="#indir" aria-disabled="true">
+            <span class="store-label">App Store</span>
+            <span class="store-note">Yakında</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Uygulamadaki kartın kendisi: aynı kağıt, aynı çizgi, aynı yazı
+           yüzleri. Sözcükler gerçek bir karttan (En Sık Kullanılan Kelimeler). -->
+      <div class="deck" aria-label="Örnek kart: Deniz. Yasak kelimeler: mavi, tuzlu, dalga, yüzmek, kum.">
+        <div class="card card-back card-back-2" aria-hidden="true"></div>
+        <div class="card card-back card-back-1" aria-hidden="true"></div>
+        <div class="card card-face" aria-hidden="true">
+          <span class="card-tag">Kelime</span>
+          <span class="card-word">Deniz</span>
+          <span class="card-rule"></span>
+          <ul class="card-taboo">
+            <li>mavi</li><li>tuzlu</li><li>dalga</li><li>yüzmek</li><li>kum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nasil" class="section">
+    <div class="wrap">
+      <h2>Nasıl oynanır</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-no">1</span>
+          <h3>Takımları kurun</h3>
+          <p>İki takım olun, her takımda en az iki kişi. Sıra gelen takımdan biri anlatıcı olur, gerisi tahmin eder.</p>
+        </li>
+        <li>
+          <span class="step-no">2</span>
+          <h3>Anlat, ama dikkat et</h3>
+          <p>Kartın üstündeki kelimeyi, altındaki beş yasak kelimeden hiçbirini söylemeden anlat. Süre işliyor.</p>
+        </li>
+        <li>
+          <span class="step-no">3</span>
+          <h3>Puanları topla</h3>
+          <p>Bilinen her kart puan getirir, yasak kelime ceza. Belirlenen tur sayısında ya da hedef puanda oyun biter.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="ozellikler" class="section section-alt">
+    <div class="wrap">
+      <h2>Neler var</h2>
+      <div class="features">
+        <article class="feature">
+          <h3>Tek telefonla, hesapsız</h3>
+          <p>Aynı masada oynamak için ne hesap ne internet gerekir. İndirdiğin kategoriler çevrimdışı da çalışır.</p>
+        </article>
+        <article class="feature">
+          <h3>Çevrimiçi ve sesli</h3>
+          <p>Arkadaşlarınla oda kur, açık bir masaya otur ya da hızlı eşleşmeyle oyuna gir. Rakip takım anlatıcıyı duyar; hakem de onlardır.</p>
+        </article>
+        <article class="feature">
+          <h3>1.100’den fazla elle seçilmiş kart</h3>
+          <p>Günlük dilin kelimelerinden deyimlere, özenle hazırlanmış üç deste. Hızlı oyun doğrudan bunlardan dağıtır.</p>
+        </article>
+        <article class="feature">
+          <h3>Kendi kategorini yarat</h3>
+          <p>Aklındaki konuyu yaz, yapay zekâ o kategori için kartları hazırlasın. Oluşan kategori herkesin kullandığı kütüphaneye eklenir.</p>
+        </article>
+        <article class="feature">
+          <h3>Sezonlar ve kademeler</h3>
+          <p>Çevrimiçi anlattığın her turla kademeni yükselt: Çıraktan Efsane’ye beş kademe, sezon sonunda kupalar.</p>
+        </article>
+        <article class="feature">
+          <h3>Kurallar sizin</h3>
+          <p>Tur süresini, puanları ve oyunun ne zaman biteceğini masaya göre ayarla.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="indir" class="section cta">
+    <div class="wrap cta-inner">
+      <img src="img/icon-512.png" alt="" width="88" height="88" class="cta-icon">
+      <h2>Masaya çok yakında</h2>
+      <p>Tabu yakında Google Play ve App Store’da.</p>
+      <div class="stores stores-center">
+        <a class="store is-soon" href="#indir" aria-disabled="true">
+          <span class="store-label">Google Play</span>
+          <span class="store-note">Yakında</span>
+        </a>
+        <a class="store is-soon" href="#indir" aria-disabled="true">
+          <span class="store-label">App Store</span>
+          <span class="store-note">Yakında</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <a class="logo logo-small" href="index.html"><img src="img/icon-512.png" alt="" width="28" height="28">Tabu</a>
+    <nav aria-label="Alt bağlantılar">
+      <a href="privacy.html">Gizlilik politikası</a>
+      <a href="delete-account.html">Hesap silme</a>
+      <a href="privacy.html#en" lang="en">Privacy (EN)</a>
+      <a href="mailto:emnivalabs@gmail.com">İletişim</a>
+    </nav>
+    <p class="copyright">© 2026 Emniva Labs</p>
+  </div>
+</footer>
+</body>
+</html>
